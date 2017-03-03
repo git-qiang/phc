@@ -1,8 +1,10 @@
 package com.phc.service;
 
-import org.apache.ibatis.annotations.Select;
+import java.util.List;
+
+import com.phc.model.User;
 
 public interface TS {
 	
-	public boolean login(String username,String password);
+	public boolean login(List<User> u);
 }
